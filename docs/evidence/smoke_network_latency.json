@@ -1,0 +1,11 @@
+{
+  "fps": 126.57201893769832,
+  "steps": 20,
+  "device": "cpu",
+  "size": [
+    64,
+    128
+  ],
+  "scope": "network incl. defog/FPN/head; excludes IO, clustering and tracking",
+  "parameters": 587255
+}

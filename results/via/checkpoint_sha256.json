@@ -1,0 +1,5 @@
+{
+  "results/via/compact/best.pt": "4049e04255369a18c058e5451a0d02633211cfc0d7ab8c26302e8991df3cc37b",
+  "results/via/unet/best.pt": "06ce37332f184e1a2705953e8e70a0ab6d700481550c5ca2a6085d225cff54db",
+  "results/via/compact_no_defog/best.pt": "8524c0e2dd6b727790aefd34a626bb52afe5b8db6df33ed749974ead0890169b"
+}

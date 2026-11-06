@@ -1,0 +1,9 @@
+{
+  "module": "full Swin-B patch embedding",
+  "initial_key": "features.0.0.weight",
+  "trained_key": "encoder.0.0.weight",
+  "max_abs_weight_update": 0.0005263136699795723,
+  "encoder_updated": true,
+  "selected_epoch": 3,
+  "purpose": "verify pretrained encoder was fine-tuned, rather than merely forwarded or frozen"
+}

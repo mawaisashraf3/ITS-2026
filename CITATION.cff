@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use RMLDNet, please cite this software."
+title: "RMLDNet: Lane Perception and Experiment Management"
+type: software
+version: 0.3.0
+authors:
+  - family-names: Ashraf
+    given-names: Muhammad Awais
+repository-code: "https://github.com/mawaisashraf3/ITS-2026"
+license: MIT

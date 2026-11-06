@@ -1,0 +1,25 @@
+{
+  "variant": "swin_b",
+  "input_shape": [
+    1,
+    3,
+    320,
+    800
+  ],
+  "logits_shape": [
+    1,
+    1,
+    320,
+    800
+  ],
+  "embedding_shape": [
+    1,
+    4,
+    320,
+    800
+  ],
+  "parameters": 87079889,
+  "forward_seconds": 1.9213546559999486,
+  "cuda_available": false,
+  "weights": "random; architecture execution only"
+}

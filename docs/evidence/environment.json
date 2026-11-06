@@ -1,0 +1,7 @@
+{
+  "python": "3.12.14",
+  "torch": "2.5.1+cpu",
+  "cuda_available": false,
+  "threads": 2,
+  "scope": "current CPU instance only"
+}

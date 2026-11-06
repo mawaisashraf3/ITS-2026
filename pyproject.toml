@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel>=0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rmldnet"
+version = "0.3.0"
+description = "Lane perception, reproducible evaluation, and transactional experiment management"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = {file = "LICENSE"}
+dynamic = ["dependencies"]
+
+[project.scripts]
+rmldnet = "rmldnet.cli:main"
+rmldnet-prepare = "rmldnet.prepare:main"
+rmldnet-db = "rmldnet.storage.cli:main"
+rmldnet-platform = "rmldnet.pipeline:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["rmldnet*"]
+
+[tool.setuptools.package-data]
+"rmldnet.storage" = ["schema.sql"]

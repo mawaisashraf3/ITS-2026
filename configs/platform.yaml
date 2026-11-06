@@ -1,0 +1,6 @@
+database: runs/platform_v3.sqlite3
+bundle: results/via
+output: runs/platform_report
+data: data/via
+seed: 7
+bootstrap_replicates: 2000

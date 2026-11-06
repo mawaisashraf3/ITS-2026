@@ -1,0 +1,11 @@
+model:
+  variant: smoke
+  fpn_channels: 16
+  embedding_dim: 4
+  defog: true
+  fpn: true
+size: [64, 128]
+epochs: 2
+batch_size: 2
+lr: 0.0001
+weight_decay: 0.01

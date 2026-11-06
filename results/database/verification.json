@@ -1,0 +1,43 @@
+{
+  "first_ingest": {
+    "new_experiments": 4,
+    "datasets": 1,
+    "samples": 930,
+    "splits": 3,
+    "split_memberships": 930,
+    "experiments": 4,
+    "conditions": 12,
+    "observations": 7320,
+    "artifacts": 33
+  },
+  "repeated_ingest": {
+    "new_experiments": 0,
+    "datasets": 1,
+    "samples": 930,
+    "splits": 3,
+    "split_memberships": 930,
+    "experiments": 4,
+    "conditions": 12,
+    "observations": 7320,
+    "artifacts": 33
+  },
+  "first_ingest_seconds": 0.19108656700154825,
+  "repeated_ingest_seconds": 0.1203761590004433,
+  "integrity": {
+    "ok": true,
+    "invalid_observation_associations": [],
+    "cross_split_groups": [],
+    "integrity_check": [
+      "ok"
+    ],
+    "foreign_key_violations": [],
+    "aggregate_mismatches": []
+  },
+  "snapshot": {
+    "path": "results/database/experiments.sqlite3",
+    "sha256": "8765a5496254407f86c8d88e9232b4f2c8651d29c272bb3ab2722bc606f81e8d",
+    "bytes": 937984
+  },
+  "backup_recovery_metrics_equal": true,
+  "json_roundtrip_metrics_equal": true
+}

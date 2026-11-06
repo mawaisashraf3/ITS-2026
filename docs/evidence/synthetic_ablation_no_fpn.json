@@ -1,0 +1,58 @@
+{
+  "scope": "two-epoch synthetic executable-branch check only",
+  "seed": 7,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 6.568455219268799,
+      "validation": {
+        "precision": 0.0650634765625,
+        "recall": 1.0,
+        "f1": 0.12217765042979943,
+        "accuracy": 0.0650634765625,
+        "lane_iou": 0.0650634765625,
+        "miou": 0.03253173828125,
+        "confusion": [
+          [
+            0,
+            22977
+          ],
+          [
+            0,
+            1599
+          ]
+        ],
+        "protocol": "binary pixel confusion; not official lane benchmark",
+        "loss": 6.563307523727417,
+        "samples": 3,
+        "tracking": false
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 6.557509326934815,
+      "validation": {
+        "precision": 0.0650634765625,
+        "recall": 1.0,
+        "f1": 0.12217765042979943,
+        "accuracy": 0.0650634765625,
+        "lane_iou": 0.0650634765625,
+        "miou": 0.03253173828125,
+        "confusion": [
+          [
+            0,
+            22977
+          ],
+          [
+            0,
+            1599
+          ]
+        ],
+        "protocol": "binary pixel confusion; not official lane benchmark",
+        "loss": 6.557293653488159,
+        "samples": 3,
+        "tracking": false
+      }
+    }
+  ]
+}

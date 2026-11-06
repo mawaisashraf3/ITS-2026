@@ -1,0 +1,10 @@
+[
+  {
+    "epoch": 1,
+    "paired_synthetic_l1": 0.12812252185540274
+  },
+  {
+    "epoch": 2,
+    "paired_synthetic_l1": 0.10897743170426111
+  }
+]

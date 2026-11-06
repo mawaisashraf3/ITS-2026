@@ -1,0 +1,123 @@
+{
+  "method": "percentile cluster bootstrap of 100-index source filename groups",
+  "replicates": 2000,
+  "seed": 7,
+  "confidence": 0.95,
+  "conditions": [
+    {
+      "model": "compact",
+      "seed": 7,
+      "beta": 0.0,
+      "groups": 13,
+      "f1": 0.7753671732720565,
+      "ci_low": 0.7567081432424801,
+      "ci_high": 0.7940132597703057
+    },
+    {
+      "model": "compact",
+      "seed": 7,
+      "beta": 0.7,
+      "groups": 13,
+      "f1": 0.7780217349671872,
+      "ci_low": 0.7613406912818436,
+      "ci_high": 0.7946584168128142
+    },
+    {
+      "model": "compact",
+      "seed": 7,
+      "beta": 1.2,
+      "groups": 13,
+      "f1": 0.7539487069657868,
+      "ci_low": 0.7384886899736695,
+      "ci_high": 0.771092105399612
+    },
+    {
+      "model": "compact_no_defog",
+      "seed": 7,
+      "beta": 0.0,
+      "groups": 13,
+      "f1": 0.7706039776229451,
+      "ci_low": 0.7486393222276835,
+      "ci_high": 0.792643012427894
+    },
+    {
+      "model": "compact_no_defog",
+      "seed": 7,
+      "beta": 0.7,
+      "groups": 13,
+      "f1": 0.7790413344835695,
+      "ci_low": 0.7571907764433855,
+      "ci_high": 0.8004695750123848
+    },
+    {
+      "model": "compact_no_defog",
+      "seed": 7,
+      "beta": 1.2,
+      "groups": 13,
+      "f1": 0.7587482960522994,
+      "ci_low": 0.7373556838091583,
+      "ci_high": 0.7808494634445512
+    },
+    {
+      "model": "swin_b",
+      "seed": 7,
+      "beta": 0.0,
+      "groups": 13,
+      "f1": 0.823403842168984,
+      "ci_low": 0.7967212364327021,
+      "ci_high": 0.8484976707961158
+    },
+    {
+      "model": "swin_b",
+      "seed": 7,
+      "beta": 0.7,
+      "groups": 13,
+      "f1": 0.8216973858883635,
+      "ci_low": 0.7952413452809447,
+      "ci_high": 0.8469535019889587
+    },
+    {
+      "model": "swin_b",
+      "seed": 7,
+      "beta": 1.2,
+      "groups": 13,
+      "f1": 0.8166202575034566,
+      "ci_low": 0.7884436227454332,
+      "ci_high": 0.8415910640288039
+    },
+    {
+      "model": "unet",
+      "seed": 7,
+      "beta": 0.0,
+      "groups": 13,
+      "f1": 0.8093949437666009,
+      "ci_low": 0.7872283727847572,
+      "ci_high": 0.8331980509802477
+    },
+    {
+      "model": "unet",
+      "seed": 7,
+      "beta": 0.7,
+      "groups": 13,
+      "f1": 0.8176391069614355,
+      "ci_low": 0.7930768296552775,
+      "ci_high": 0.8440190555055048
+    },
+    {
+      "model": "unet",
+      "seed": 7,
+      "beta": 1.2,
+      "groups": 13,
+      "f1": 0.810259929410248,
+      "ci_low": 0.7841531193967255,
+      "ci_high": 0.8389291053453775
+    }
+  ],
+  "paired_comparison": {
+    "comparison": "swin_b minus unet, original images",
+    "delta_f1": 0.014008898402383063,
+    "ci_low": -0.0032886573742011036,
+    "ci_high": 0.027499426059133334
+  },
+  "limits": "Groups are filename blocks, not verified independent drives. One training seed; intervals do not establish road-domain generalization or repeated-training uncertainty."
+}

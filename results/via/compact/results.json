@@ -1,0 +1,78 @@
+{
+  "model": "compact",
+  "seed": 7,
+  "selection": "best validation pixel F1; threshold validation-only",
+  "checkpoint_tensor_sha256": "7a2f5112db061ac069ab6f8ea6e3fb1109691a13a368b9e25465412a163cb291",
+  "conditions": [
+    {
+      "precision": 0.798722136502413,
+      "recall": 0.7533392250082247,
+      "f1": 0.7753671732720565,
+      "accuracy": 0.9742072386075332,
+      "lane_iou": 0.6331425684086345,
+      "miou": 0.8030740815423043,
+      "confusion": [
+        [
+          12195188,
+          147147
+        ],
+        [
+          191188,
+          583917
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 9.119321090000085,
+      "threshold": 0.6500000000000001,
+      "beta": 0.0
+    },
+    {
+      "precision": 0.8149822490891445,
+      "recall": 0.7442681959218429,
+      "f1": 0.7780217349671872,
+      "accuracy": 0.9749048594847776,
+      "lane_iou": 0.636690321939806,
+      "miou": 0.8052203819529633,
+      "confusion": [
+        [
+          12211370,
+          130965
+        ],
+        [
+          198219,
+          576886
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 9.601533139999901,
+      "threshold": 0.6500000000000001,
+      "beta": 0.7
+    },
+    {
+      "precision": 0.8304485005750007,
+      "recall": 0.690354210074764,
+      "f1": 0.7539487069657868,
+      "accuracy": 0.9733745303961748,
+      "lane_iou": 0.6050703620152541,
+      "miou": 0.7886562873866219,
+      "confusion": [
+        [
+          12233085,
+          109250
+        ],
+        [
+          240008,
+          535097
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 9.284717506999641,
+      "threshold": 0.6500000000000001,
+      "beta": 1.2
+    }
+  ],
+  "per_image_metrics_file": "per_image_metrics.jsonl"
+}

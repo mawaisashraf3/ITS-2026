@@ -1,0 +1,1042 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 6.519958782196045,
+    "validation": {
+      "precision": 0.07926059513074842,
+      "recall": 0.549718574108818,
+      "f1": 0.13854519662699977,
+      "accuracy": 0.5552164713541666,
+      "lane_iou": 0.07442845046570702,
+      "miou": 0.3065732158223796,
+      "confusion": [
+        [
+          12766,
+          10211
+        ],
+        [
+          720,
+          879
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 6.229128360748291,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 2,
+    "train_loss": 5.882255935668946,
+    "validation": {
+      "precision": 0.10125744540039709,
+      "recall": 0.2870544090056285,
+      "f1": 0.149706457925636,
+      "accuracy": 0.787841796875,
+      "lane_iou": 0.08090957165520889,
+      "miou": 0.43235676368554693,
+      "confusion": [
+        [
+          18903,
+          4074
+        ],
+        [
+          1140,
+          459
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 4.895206451416016,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 3,
+    "train_loss": 4.810974979400635,
+    "validation": {
+      "precision": 0.07445475056405114,
+      "recall": 0.18574108818011256,
+      "f1": 0.1062992125984252,
+      "accuracy": 0.7967936197916666,
+      "lane_iou": 0.056133056133056136,
+      "miou": 0.42522044709119955,
+      "confusion": [
+        [
+          19285,
+          3692
+        ],
+        [
+          1302,
+          297
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 2.469550848007202,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 4,
+    "train_loss": 3.388616156578064,
+    "validation": {
+      "precision": 0.04906542056074766,
+      "recall": 0.02626641651031895,
+      "f1": 0.034215885947046845,
+      "accuracy": 0.9035237630208334,
+      "lane_iou": 0.01740571902196436,
+      "miou": 0.4603821617038574,
+      "confusion": [
+        [
+          22163,
+          814
+        ],
+        [
+          1557,
+          42
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.7735811471939087,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 5,
+    "train_loss": 1.8620783805847168,
+    "validation": {
+      "precision": 0.04526748971193416,
+      "recall": 0.0068792995622263915,
+      "f1": 0.011943539630836048,
+      "accuracy": 0.9259440104166666,
+      "lane_iou": 0.006007646095030038,
+      "miou": 0.4659592474318016,
+      "confusion": [
+        [
+          22745,
+          232
+        ],
+        [
+          1588,
+          11
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.8649818897247314,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 6,
+    "train_loss": 2.0647552490234373,
+    "validation": {
+      "precision": 0.07142857142857142,
+      "recall": 0.013758599124452783,
+      "f1": 0.023072889355007866,
+      "accuracy": 0.9241943359375,
+      "lane_iou": 0.011671087533156498,
+      "miou": 0.4678987513905906,
+      "confusion": [
+        [
+          22691,
+          286
+        ],
+        [
+          1577,
+          22
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.816620647907257,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 7,
+    "train_loss": 1.8810139179229737,
+    "validation": {
+      "precision": 0.05339805825242718,
+      "recall": 0.0068792995622263915,
+      "f1": 0.01218836565096953,
+      "accuracy": 0.9274495442708334,
+      "lane_iou": 0.006131549609810479,
+      "miou": 0.4667743031989618,
+      "confusion": [
+        [
+          22782,
+          195
+        ],
+        [
+          1588,
+          11
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.7680173516273499,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 8,
+    "train_loss": 1.957400631904602,
+    "validation": {
+      "precision": 0.08661417322834646,
+      "recall": 0.0068792995622263915,
+      "f1": 0.012746234067207415,
+      "accuracy": 0.9306640625,
+      "lane_iou": 0.00641399416909621,
+      "miou": 0.46852350431027573,
+      "confusion": [
+        [
+          22861,
+          116
+        ],
+        [
+          1588,
+          11
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.7219387292861938,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 9,
+    "train_loss": 2.1065494060516357,
+    "validation": {
+      "precision": 0.07777777777777778,
+      "recall": 0.004377736085053158,
+      "f1": 0.008288928359976317,
+      "accuracy": 0.9318440755208334,
+      "lane_iou": 0.004161712247324614,
+      "miou": 0.46799318466776263,
+      "confusion": [
+        [
+          22894,
+          83
+        ],
+        [
+          1592,
+          7
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.7180660963058472,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 10,
+    "train_loss": 1.7632673978805542,
+    "validation": {
+      "precision": 0.07352941176470588,
+      "recall": 0.006253908692933083,
+      "f1": 0.011527377521613832,
+      "accuracy": 0.9302164713541666,
+      "lane_iou": 0.005797101449275362,
+      "miou": 0.4679925831271452,
+      "confusion": [
+        [
+          22851,
+          126
+        ],
+        [
+          1589,
+          10
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.721664309501648,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 11,
+    "train_loss": 1.7551142215728759,
+    "validation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9339599609375,
+      "lane_iou": 0.0,
+      "miou": 0.46697998046875,
+      "confusion": [
+        [
+          22953,
+          24
+        ],
+        [
+          1599,
+          0
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.6771931648254395,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 12,
+    "train_loss": 1.9487628698349,
+    "validation": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9349365234375,
+      "lane_iou": 0.0,
+      "miou": 0.46746826171875,
+      "confusion": [
+        [
+          22977,
+          0
+        ],
+        [
+          1599,
+          0
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.7767162322998047,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 13,
+    "train_loss": 1.6920261144638062,
+    "validation": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9349365234375,
+      "lane_iou": 0.0,
+      "miou": 0.46746826171875,
+      "confusion": [
+        [
+          22977,
+          0
+        ],
+        [
+          1599,
+          0
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.773396074771881,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 14,
+    "train_loss": 1.8023513078689575,
+    "validation": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9349365234375,
+      "lane_iou": 0.0,
+      "miou": 0.46746826171875,
+      "confusion": [
+        [
+          22977,
+          0
+        ],
+        [
+          1599,
+          0
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.6950459480285645,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 15,
+    "train_loss": 1.6987592458724976,
+    "validation": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9349365234375,
+      "lane_iou": 0.0,
+      "miou": 0.46746826171875,
+      "confusion": [
+        [
+          22977,
+          0
+        ],
+        [
+          1599,
+          0
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.8557913899421692,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 16,
+    "train_loss": 1.7407392263412476,
+    "validation": {
+      "precision": 0.3333333333333333,
+      "recall": 0.0012507817385866166,
+      "f1": 0.0024922118380062306,
+      "accuracy": 0.9348551432291666,
+      "lane_iou": 0.0012476606363069245,
+      "miou": 0.46804875096599263,
+      "confusion": [
+        [
+          22973,
+          4
+        ],
+        [
+          1597,
+          2
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.8433358073234558,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 17,
+    "train_loss": 2.0092562437057495,
+    "validation": {
+      "precision": 0.21875,
+      "recall": 0.004377736085053158,
+      "f1": 0.008583690987124463,
+      "accuracy": 0.9342041015625,
+      "lane_iou": 0.004310344827586207,
+      "miou": 0.4692478501784559,
+      "confusion": [
+        [
+          22952,
+          25
+        ],
+        [
+          1592,
+          7
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.8399921655654907,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 18,
+    "train_loss": 1.720139479637146,
+    "validation": {
+      "precision": 0.2222222222222222,
+      "recall": 0.006253908692933083,
+      "f1": 0.012165450121654502,
+      "accuracy": 0.9339192708333334,
+      "lane_iou": 0.006119951040391677,
+      "miou": 0.47000616130542744,
+      "confusion": [
+        [
+          22942,
+          35
+        ],
+        [
+          1589,
+          10
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.7981629371643066,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 19,
+    "train_loss": 1.6327024459838868,
+    "validation": {
+      "precision": 0.1568627450980392,
+      "recall": 0.010006253908692933,
+      "f1": 0.0188124632569077,
+      "accuracy": 0.9320882161458334,
+      "lane_iou": 0.009495548961424332,
+      "miou": 0.4707697614513962,
+      "confusion": [
+        [
+          22891,
+          86
+        ],
+        [
+          1583,
+          16
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.679388165473938,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 20,
+    "train_loss": 1.641497540473938,
+    "validation": {
+      "precision": 0.10989010989010989,
+      "recall": 0.006253908692933083,
+      "f1": 0.011834319526627219,
+      "accuracy": 0.9320475260416666,
+      "lane_iou": 0.005952380952380952,
+      "miou": 0.46898612290312197,
+      "confusion": [
+        [
+          22896,
+          81
+        ],
+        [
+          1589,
+          10
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.57793390750885,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 21,
+    "train_loss": 1.6013418912887574,
+    "validation": {
+      "precision": 0.12121212121212122,
+      "recall": 0.0075046904315197,
+      "f1": 0.014134275618374558,
+      "accuracy": 0.931884765625,
+      "lane_iou": 0.0071174377224199285,
+      "miou": 0.46948446385388215,
+      "confusion": [
+        [
+          22890,
+          87
+        ],
+        [
+          1587,
+          12
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.568892478942871,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 22,
+    "train_loss": 1.5769893169403075,
+    "validation": {
+      "precision": 0.11403508771929824,
+      "recall": 0.008130081300813009,
+      "f1": 0.015178050204319907,
+      "accuracy": 0.9313557942708334,
+      "lane_iou": 0.007647058823529412,
+      "miou": 0.4694832615291771,
+      "confusion": [
+        [
+          22876,
+          101
+        ],
+        [
+          1586,
+          13
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5584989190101624,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 23,
+    "train_loss": 1.576939296722412,
+    "validation": {
+      "precision": 0.1,
+      "recall": 0.008130081300813009,
+      "f1": 0.015037593984962405,
+      "accuracy": 0.9307047526041666,
+      "lane_iou": 0.007575757575757576,
+      "miou": 0.46912191778962936,
+      "confusion": [
+        [
+          22860,
+          117
+        ],
+        [
+          1586,
+          13
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5490738153457642,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 24,
+    "train_loss": 1.617440891265869,
+    "validation": {
+      "precision": 0.1144578313253012,
+      "recall": 0.011882426516572859,
+      "f1": 0.02152974504249292,
+      "accuracy": 0.9297281901041666,
+      "lane_iou": 0.010882016036655211,
+      "miou": 0.470277918064343,
+      "confusion": [
+        [
+          22830,
+          147
+        ],
+        [
+          1580,
+          19
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5395366549491882,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 25,
+    "train_loss": 1.5712796449661255,
+    "validation": {
+      "precision": 0.15918367346938775,
+      "recall": 0.024390243902439025,
+      "f1": 0.04229934924078091,
+      "accuracy": 0.9281412760416666,
+      "lane_iou": 0.021606648199445983,
+      "miou": 0.4748168546861843,
+      "confusion": [
+        [
+          22771,
+          206
+        ],
+        [
+          1560,
+          39
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5340521335601807,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 26,
+    "train_loss": 1.5585545539855956,
+    "validation": {
+      "precision": 0.36561264822134387,
+      "recall": 0.11569731081926204,
+      "f1": 0.17577197149643706,
+      "accuracy": 0.9294026692708334,
+      "lane_iou": 0.09635416666666667,
+      "miou": 0.512610685891654,
+      "confusion": [
+        [
+          22656,
+          321
+        ],
+        [
+          1414,
+          185
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.529955804347992,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 27,
+    "train_loss": 1.5535559177398681,
+    "validation": {
+      "precision": 0.40669856459330145,
+      "recall": 0.15947467166979362,
+      "f1": 0.22911051212938005,
+      "accuracy": 0.93017578125,
+      "lane_iou": 0.1293759512937595,
+      "miou": 0.52940982096574,
+      "confusion": [
+        [
+          22605,
+          372
+        ],
+        [
+          1344,
+          255
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5232850909233093,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 28,
+    "train_loss": 1.5486692190170288,
+    "validation": {
+      "precision": 0.4144645340751043,
+      "recall": 0.18636647904940587,
+      "f1": 0.2571182053494392,
+      "accuracy": 0.929931640625,
+      "lane_iou": 0.14752475247524752,
+      "miou": 0.5382981699603356,
+      "confusion": [
+        [
+          22556,
+          421
+        ],
+        [
+          1301,
+          298
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5174758434295654,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 29,
+    "train_loss": 1.5736509799957275,
+    "validation": {
+      "precision": 0.4300126103404792,
+      "recall": 0.21325828642901815,
+      "f1": 0.28511705685618727,
+      "accuracy": 0.930419921875,
+      "lane_iou": 0.16626036079960996,
+      "miou": 0.5478506260362812,
+      "confusion": [
+        [
+          22525,
+          452
+        ],
+        [
+          1258,
+          341
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.513391375541687,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 30,
+    "train_loss": 1.5897403717041017,
+    "validation": {
+      "precision": 0.42338251986379116,
+      "recall": 0.233270794246404,
+      "f1": 0.3008064516129032,
+      "accuracy": 0.929443359375,
+      "lane_iou": 0.17702895111532985,
+      "miou": 0.5526924700211612,
+      "confusion": [
+        [
+          22469,
+          508
+        ],
+        [
+          1226,
+          373
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5107097625732422,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 31,
+    "train_loss": 1.5482011318206788,
+    "validation": {
+      "precision": 0.41375661375661377,
+      "recall": 0.24452782989368355,
+      "f1": 0.30738993710691825,
+      "accuracy": 0.9283040364583334,
+      "lane_iou": 0.18160705991639572,
+      "miou": 0.5543759922282,
+      "confusion": [
+        [
+          22423,
+          554
+        ],
+        [
+          1208,
+          391
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5097808241844177,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 32,
+    "train_loss": 1.5460232496261597,
+    "validation": {
+      "precision": 0.4054878048780488,
+      "recall": 0.24953095684803,
+      "f1": 0.3089430894308943,
+      "accuracy": 0.9273681640625,
+      "lane_iou": 0.18269230769230768,
+      "miou": 0.5544309038151326,
+      "confusion": [
+        [
+          22392,
+          585
+        ],
+        [
+          1200,
+          399
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.508689284324646,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 33,
+    "train_loss": 1.540191125869751,
+    "validation": {
+      "precision": 0.4031777557100298,
+      "recall": 0.25390869293308316,
+      "f1": 0.3115886415963162,
+      "accuracy": 0.927001953125,
+      "lane_iou": 0.18454545454545454,
+      "miou": 0.5551606048068605,
+      "confusion": [
+        [
+          22376,
+          601
+        ],
+        [
+          1193,
+          406
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5077465772628784,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 34,
+    "train_loss": 1.5384822368621827,
+    "validation": {
+      "precision": 0.4060370009737098,
+      "recall": 0.2607879924953096,
+      "f1": 0.3175932977913176,
+      "accuracy": 0.9270833333333334,
+      "lane_iou": 0.18877320054323224,
+      "miou": 0.5572989724724523,
+      "confusion": [
+        [
+          22367,
+          610
+        ],
+        [
+          1182,
+          417
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5070148706436157,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 35,
+    "train_loss": 1.6364607334136962,
+    "validation": {
+      "precision": 0.4,
+      "recall": 0.2614133833646029,
+      "f1": 0.3161875945537065,
+      "accuracy": 0.9264322916666666,
+      "lane_iou": 0.18778077268643306,
+      "miou": 0.5564700700918712,
+      "confusion": [
+        [
+          22350,
+          627
+        ],
+        [
+          1181,
+          418
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5065900087356567,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 36,
+    "train_loss": 1.5544973611831665,
+    "validation": {
+      "precision": 0.3973384030418251,
+      "recall": 0.2614133833646029,
+      "f1": 0.3153526970954357,
+      "accuracy": 0.9261474609375,
+      "lane_iou": 0.18719211822660098,
+      "miou": 0.5560308633189466,
+      "confusion": [
+        [
+          22343,
+          634
+        ],
+        [
+          1181,
+          418
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5061147809028625,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 37,
+    "train_loss": 1.5356422662734985,
+    "validation": {
+      "precision": 0.396584440227704,
+      "recall": 0.2614133833646029,
+      "f1": 0.31511496419148133,
+      "accuracy": 0.9260660807291666,
+      "lane_iou": 0.18702460850111857,
+      "miou": 0.5559057143010602,
+      "confusion": [
+        [
+          22341,
+          636
+        ],
+        [
+          1181,
+          418
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5058830976486206,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 38,
+    "train_loss": 1.5502142667770387,
+    "validation": {
+      "precision": 0.3962085308056872,
+      "recall": 0.2614133833646029,
+      "f1": 0.31499623210248684,
+      "accuracy": 0.926025390625,
+      "lane_iou": 0.18694096601073346,
+      "miou": 0.5558431959782949,
+      "confusion": [
+        [
+          22340,
+          637
+        ],
+        [
+          1181,
+          418
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5057392120361328,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 39,
+    "train_loss": 1.5404198884963989,
+    "validation": {
+      "precision": 0.39678030303030304,
+      "recall": 0.2620387742338962,
+      "f1": 0.31563088512241055,
+      "accuracy": 0.9260660807291666,
+      "lane_iou": 0.1873881932021467,
+      "miou": 0.5560859498941146,
+      "confusion": [
+        [
+          22340,
+          637
+        ],
+        [
+          1180,
+          419
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.505673885345459,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 40,
+    "train_loss": 1.566160225868225,
+    "validation": {
+      "precision": 0.39678030303030304,
+      "recall": 0.2620387742338962,
+      "f1": 0.31563088512241055,
+      "accuracy": 0.9260660807291666,
+      "lane_iou": 0.1873881932021467,
+      "miou": 0.5560859498941146,
+      "confusion": [
+        [
+          22340,
+          637
+        ],
+        [
+          1180,
+          419
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 1.5056618452072144,
+      "samples": 3,
+      "tracking": false
+    }
+  }
+]

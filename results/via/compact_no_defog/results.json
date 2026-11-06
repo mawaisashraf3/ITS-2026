@@ -1,0 +1,78 @@
+{
+  "model": "compact_no_defog",
+  "seed": 7,
+  "selection": "best validation pixel F1; threshold validation-only",
+  "checkpoint_tensor_sha256": "c6ac88269630fcd448ca4102ac1f42b7ac474c815e2566121070332f1808a211",
+  "conditions": [
+    {
+      "precision": 0.7767686155048047,
+      "recall": 0.7645364176466414,
+      "f1": 0.7706039776229451,
+      "accuracy": 0.9731035933840749,
+      "lane_iou": 0.6268150893582454,
+      "miou": 0.799323057878329,
+      "confusion": [
+        [
+          12172032,
+          170303
+        ],
+        [
+          182509,
+          592596
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 5.707703177999974,
+      "threshold": 0.6500000000000001,
+      "beta": 0.0
+    },
+    {
+      "precision": 0.7912560642309504,
+      "recall": 0.7671979925300443,
+      "f1": 0.7790413344835695,
+      "accuracy": 0.9742842353386026,
+      "lane_iou": 0.6380570911088602,
+      "miou": 0.8055600915424979,
+      "confusion": [
+        [
+          12185456,
+          156879
+        ],
+        [
+          180446,
+          594659
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 5.428659420000258,
+      "threshold": 0.6500000000000001,
+      "beta": 0.7
+    },
+    {
+      "precision": 0.8051647169382385,
+      "recall": 0.7173918372349553,
+      "f1": 0.7587482960522994,
+      "accuracy": 0.9730430632806402,
+      "lane_iou": 0.611276740760284,
+      "miou": 0.7915632515994597,
+      "confusion": [
+        [
+          12207780,
+          134555
+        ],
+        [
+          219051,
+          556054
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 5.634349997999834,
+      "threshold": 0.6500000000000001,
+      "beta": 1.2
+    }
+  ],
+  "per_image_metrics_file": "per_image_metrics.jsonl"
+}

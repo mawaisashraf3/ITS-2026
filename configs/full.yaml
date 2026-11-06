@@ -1,0 +1,11 @@
+model:
+  variant: swin_b
+  fpn_channels: 128
+  embedding_dim: 4
+  defog: true
+  fpn: true
+size: [320, 800]
+epochs: 100  # 100 TuSimple/FoggyLane; use full_50.yaml for CULane/BDD100K
+batch_size: 8
+lr: 0.0001
+weight_decay: 0.01

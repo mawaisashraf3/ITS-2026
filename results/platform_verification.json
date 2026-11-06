@@ -1,0 +1,95 @@
+{
+  "version": "0.3.0",
+  "timestamp_utc": "2026-11-06T13:01:38.869722+00:00",
+  "tests": {
+    "command": "python -m pytest -q",
+    "returncode": 0,
+    "stdout": ".............................                                            [100%]\n29 passed in 5.09s"
+  },
+  "dependencies": {
+    "returncode": 0,
+    "stdout": "No broken requirements found."
+  },
+  "source_sha256": {
+    "rmldnet/__init__.py": "d9e1b8268b57aaa38c75ff2a834ac66848a198739886906ec002b6cf1723d3ad",
+    "rmldnet/ablate.py": "a4772fcba21c3d6737eaea6b8d6ac91e2414705d278a0d870d388306559e6aae",
+    "rmldnet/analysis.py": "98f28601987a9aa38bb98dac152ecbc7c9c9d3565cbbd6fe58ddc1dac18a962b",
+    "rmldnet/baselines.py": "dfd2d4d623e04d8882b8531d26d1d6a421990e771440cadaafdd20ae891f64dd",
+    "rmldnet/cli.py": "e45a3793e43f343ec51fc6f55117bc020d9cdfcd06570839efa318b1cdc42b70",
+    "rmldnet/data.py": "931d6fafab029cb0fb4b183eea436a421cc3f5c41102f8c7eaf9234ebb5cb9b5",
+    "rmldnet/experiment.py": "5f07b9334cb2d72b2f986697f133ed04bcecbd38178578e3f3a2282a82671f78",
+    "rmldnet/losses.py": "63e1547c37bae5ac40e0c2b9ff920b1fc3594d1bd28285971199969fb602a158",
+    "rmldnet/metrics.py": "d83008cefa7a622f69eed48b0a4a875e12106f2dcc93db7b38e4b56e1255b85d",
+    "rmldnet/model.py": "bd1336ee02ee9d3bce4597b8918fffd26bad27d28aa199d3e1bc9ea7bdde71bd",
+    "rmldnet/pipeline.py": "3d7fc24192155a3d9ad917c4a1acddfef81a327f624bc0b368cc9665c6318093",
+    "rmldnet/predict.py": "5e0537eeb90f38f0571f454240f64613558d265c426f6c1b97bcfeffaa70a739",
+    "rmldnet/prepare.py": "5962e98f7a965f53c3bd417834f35ad7c2d106b18aad4b9189f345385c028d2f",
+    "rmldnet/public_data.py": "7d214429198f5fae5101722c08dd6aa7c8f7f80acb7199fbb2aca79b5a7da70c",
+    "rmldnet/report.py": "6bef63372cc1fbfef134eb482f5da0cc7365be21dd1aac77efcbc1b8d7850ed5",
+    "rmldnet/settings.py": "b6233dbd8479b5f024def296ae61a78fa059d8f556ad618458ac7a057de04e18",
+    "rmldnet/storage/__init__.py": "e3ae75fb56df5940f214617b285850625ecbdb52c403eb8fa3f66b673787fe8f",
+    "rmldnet/storage/cli.py": "d09a29874d8fbb3e337be2ac2cb93a6651ec1f6e600f8e86549e45894250eba4",
+    "rmldnet/storage/schema.sql": "71f91a7118d449469ed5d48cf4b439f531740cdc66119281ecdd363623a7423e",
+    "rmldnet/storage/store.py": "1a55c89bd12c1b536d2cf9a92b66b1673fd3bfa05903f9b9da987879d6661d42",
+    "rmldnet/storage/validation.py": "193680046e0f935c4e38ee4fb7e0b823bac4f12b40aaa370752e7493ee78cf78",
+    "rmldnet/tracking.py": "3d51a1184a7a3e2512764098f16e82e6885e7906ec9b2ff2c02261e8eb177958"
+  },
+  "wheel": {
+    "filename": "rmldnet-0.3.0-py3-none-any.whl",
+    "sha256": "e4a1d1a514a855aee3015c660b5ce3e87cdbb7fcc89c545b4fe4292479a553fd",
+    "schema_packaged": true,
+    "source_matches_release": true
+  },
+  "database_verification": {
+    "first_ingest": {
+      "new_experiments": 4,
+      "datasets": 1,
+      "samples": 930,
+      "splits": 3,
+      "split_memberships": 930,
+      "experiments": 4,
+      "conditions": 12,
+      "observations": 7320,
+      "artifacts": 33
+    },
+    "repeated_ingest": {
+      "new_experiments": 0,
+      "datasets": 1,
+      "samples": 930,
+      "splits": 3,
+      "split_memberships": 930,
+      "experiments": 4,
+      "conditions": 12,
+      "observations": 7320,
+      "artifacts": 33
+    },
+    "first_ingest_seconds": 0.19108656700154825,
+    "repeated_ingest_seconds": 0.1203761590004433,
+    "integrity": {
+      "ok": true,
+      "invalid_observation_associations": [],
+      "cross_split_groups": [],
+      "integrity_check": [
+        "ok"
+      ],
+      "foreign_key_violations": [],
+      "aggregate_mismatches": []
+    },
+    "snapshot": {
+      "path": "results/database/experiments.sqlite3",
+      "sha256": "8765a5496254407f86c8d88e9232b4f2c8651d29c272bb3ab2722bc606f81e8d",
+      "bytes": 937984
+    },
+    "backup_recovery_metrics_equal": true,
+    "json_roundtrip_metrics_equal": true
+  },
+  "analysis": {
+    "bootstrap_resamples": 2000,
+    "groups": 13,
+    "conditions": 12,
+    "sensitivity_betas": 6,
+    "sensitivity_thresholds": 10,
+    "paired_f1_interval_includes_zero": true,
+    "original_confusion_reproduced": true
+  }
+}
