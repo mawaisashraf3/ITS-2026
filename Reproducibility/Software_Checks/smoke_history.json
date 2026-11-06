@@ -1,0 +1,54 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 6.563921356201172,
+    "validation": {
+      "precision": 0.0650634765625,
+      "recall": 1.0,
+      "f1": 0.12217765042979943,
+      "accuracy": 0.0650634765625,
+      "lane_iou": 0.0650634765625,
+      "miou": 0.03253173828125,
+      "confusion": [
+        [
+          0,
+          22977
+        ],
+        [
+          0,
+          1599
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 6.558653831481934,
+      "samples": 3,
+      "tracking": false
+    }
+  },
+  {
+    "epoch": 2,
+    "train_loss": 6.553190422058106,
+    "validation": {
+      "precision": 0.0650634765625,
+      "recall": 1.0,
+      "f1": 0.12217765042979943,
+      "accuracy": 0.0650634765625,
+      "lane_iou": 0.0650634765625,
+      "miou": 0.03253173828125,
+      "confusion": [
+        [
+          0,
+          22977
+        ],
+        [
+          0,
+          1599
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "loss": 6.552285432815552,
+      "samples": 3,
+      "tracking": false
+    }
+  }
+]

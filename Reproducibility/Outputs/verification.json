@@ -1,0 +1,16 @@
+{
+  "source_commit": "f99112fdd8c0f736d96a2661f3940f051b71501d",
+  "database_sha256": "8765a5496254407f86c8d88e9232b4f2c8651d29c272bb3ab2722bc606f81e8d",
+  "observations": 7320,
+  "test_groups": 13,
+  "split_sizes": {
+    "train": 256,
+    "validation": 64,
+    "test": 610
+  },
+  "independent_training_runs_added": 0,
+  "bootstrap_seed": 8603,
+  "bootstrap_draws": 20000,
+  "numpy": "2.3.5",
+  "sensitivity_rows": 60
+}
