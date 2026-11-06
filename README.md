@@ -6,7 +6,7 @@ RMLDNet is a Python platform for camera-based lane segmentation, visibility rest
 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB)](pyproject.toml)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-0.3.0-2563a6)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-0.4.0-2563a6)](CHANGELOG.md)
 
 ## Overview and objectives
 
@@ -55,6 +55,73 @@ Full Swin-B was fine-tuned for 3 epochs from verified ImageNet-1K weights. Compa
 
 Full numeric results, confusion matrices, and per-image observations are in [results/via](results/via/README.md). Statistical records and sensitivity sweeps are in [results/analysis](results/analysis/README.md). Vector SVG and PDF figures are available alongside the PNG versions in [results/figures](results/figures).
 
+## Additional computational experiments (v0.4.0)
+
+Six new experiment groups add seven figures, with full outputs in [the extended results report](results/extensions/README.md). Original segmentation results and earlier figures remain unchanged. Numerical trajectory studies are explicitly synthetic; real-image diagnostics use the same 610 held-out miniature-track images.
+
+### Synthetic filtering and temporal stress
+
+A reusable linear Kalman kernel and a two-anchor constant-velocity wrapper now expose prediction, correction, control inputs, missing/partial measurements, innovation gates, Joseph covariance updates, stable initialization and lost-track reacquisition. On separate verification noise seeds 207–226, nominal observed-frame RMSE is **0.011947 raw → 0.004861 filtered**. With dropout/outlier stress it is **0.034545 → 0.005510**, in normalized image width. These are simulated measurement trajectories, not road-video accuracy scores.
+
+![Synthetic Kalman prediction, correction and image integration](results/extensions/figures/kalman_nominal.png)
+
+*New figure 1. Known synthetic trajectories, raw observations, prior predictions, posterior estimates and model-based uncertainty. The third panel runs the delivered segmentation model on a controlled rendered sequence before measurement extraction and filtering. Startup estimates are withheld until a stable five-observation window is available.*
+
+![Synthetic temporal stress](results/extensions/figures/kalman_stress.png)
+
+*New figure 2. Dropout/outlier stress, observed-frame RMSE distributions across verification noise seeds, and a process-noise sensitivity check. Initial gating failures and an intermediate startup failure are retained and explained in the report; they were not discarded from the investigation.*
+
+### Extended fog and restoration comparison
+
+Three frozen checkpoints were evaluated at new atmospheric β levels 0.15, 0.45, 1.8 and 2.1. The original-image condition was replayed and reproduced all three original confusion matrices exactly. Thresholds remain validation-selected.
+
+| Model | β=0.15 F1 (%) | β=0.45 | β=1.8 | β=2.1 |
+|---|---:|---:|---:|---:|
+| compact | 77.73 | 77.95 | 61.31 | 49.12 |
+| compact_no_defog | 77.41 | 77.85 | 61.17 | 51.25 |
+| unet | 81.37 | 81.82 | 74.18 | 66.09 |
+
+![New fog levels](results/extensions/figures/fog_robustness.png)
+
+*New figure 3. Held-out performance under additional controlled fog levels and restoration-enabled minus disabled differences. Severe fog substantially degrades all three models. Restoration does not consistently help; differing original training histories prevent a causal claim from this comparison.*
+
+### Controlled computational efficiency
+
+Fresh subprocesses benchmark all four trained models serially using the same SHA-256-verified 96×224 synthetic RGB probe, batch 1, two Torch threads, five warmups and 3×30 forwards. Raw timings and sampled total process RSS are retained. These are network-only CPU measurements, not end-to-end vehicle-system speed.
+
+![Controlled inference efficiency](results/extensions/figures/efficiency.png)
+
+*New figure 4. Median/P25–P95 forward timings, actual parameter counts, and sampled total resident memory. RSS includes the runtime and model and is not activation-only memory.*
+
+### Confidence, uncertainty and failure cases
+
+New analyses calculate Brier error, negative log-likelihood, decision-calibration ECE, and predictive Bernoulli entropy. Class-conditional Brier scores expose lane/background imbalance. Predictive entropy is not epistemic uncertainty and cannot identify every confident error.
+
+![Segmentation confidence and calibration](results/extensions/figures/confidence.png)
+
+*New figure 5. Selected-class reliability and lane/background probability errors for the frozen original-image predictions. Background dominates the population, so aggregate calibration alone is insufficient.*
+
+![Deterministically selected segmentation failures](results/extensions/figures/failure_cases.png)
+
+*New figure 6. The compact model’s three lowest finite per-image F1 cases, with reference masks, predictions, false-positive/false-negative maps and entropy. The selection rule and example IDs are published; these are deliberately difficult cases, not representative averages.*
+
+### Lane geometry and measurement availability
+
+Near/far row-band measurements estimate a corridor center only when markings bracket the image center. For compact Swin, near-anchor MAE is **2.129 pixels on 56/610 paired-valid images**; far-anchor MAE is **0.771 pixels on 166/610 images**. The reference extractor itself succeeds on only 64 near and 178 far images. These are coverage-limited mask-consistency measurements, not calibrated vehicle localization.
+
+![Lane geometry extraction and conditional errors](results/extensions/figures/geometry.png)
+
+*New figure 7. Paired mask-derived center scatter, conditional MAE, and a deterministic measurement example. Missing geometry is not filled using reference annotations. Report availability together with error.*
+
+### Reproduce the additions
+
+```bash
+python -m rmldnet.extensions all --output runs/extensions --full-checkpoint runs/via/swin_b/best.pt
+python -m rmldnet.temporal --render-demo --output runs/controlled_sequence
+```
+
+The full Swin-B checkpoint must first be generated using the existing training instructions. Independent stages and input sequence requirements are documented in [additional experiments](docs/additional_experiments.md) and [Kalman mathematics and configuration](docs/kalman_filter.md). Generated working outputs remain under `runs/`.
+
 ## System architecture
 
 ```mermaid
@@ -81,6 +148,31 @@ Training uses `(BCE + Dice) + 0.5 L_instance + 0.5 L_soft-IoU`. For semantic-onl
 The temporal module fits normalized image-coordinate cubic curves and maintains offset, heading, curvature-proxy, and curvature-change-proxy states. Gated Hungarian matching associates detections; a Joseph-form covariance update helps preserve numerical stability. State proxies are not calibrated physical roadway curvature.
 
 See [methodology](docs/methodology.md) for equations, parameters, and scientific assumptions, and [architecture](docs/architecture.md) for module boundaries.
+
+## Explicit Kalman filtering workflow
+
+The new semantic sequence state is `x=[near_center,far_center,near_velocity,far_velocity]`, using normalized image width and seconds. It complements the existing individual-lane cubic tracker. Initialization requires five coherent complete measurements; subsequent partial or missing observations are supported. Q/R, covariance validation, innovation gating and recovery behavior are configurable in `configs/temporal.yaml`.
+
+$$\hat x^-_k=F_k\hat x_{k-1}+B_ku_k,\qquad P^-_k=F_kP_{k-1}F_k^T+Q_k.$$
+
+$$K_k=P^-_kH_k^T(H_kP^-_kH_k^T+R_k)^{-1},\qquad \hat x_k=\hat x^-_k+K_k(z_k-H_k\hat x^-_k).$$
+
+$$P_k=(I-K_kH_k)P^-_k(I-K_kH_k)^T+K_kR_kK_k^T.$$
+
+Linear solves replace explicit inversion. The last equation is the Joseph covariance update. Full matrix definitions, units, initialization, validation, reacquisition and numerical tests are explained in [the Kalman guide](docs/kalman_filter.md).
+
+```mermaid
+flowchart LR
+    A[Explicitly declared ordered images] --> B[Trained segmentation]
+    B --> C[Near/far corridor measurements]
+    C --> D[Stable initialization or Kalman prediction]
+    D --> E[Innovation gate and Joseph correction]
+    E --> F[Filtered estimate with covariance]
+    E --> G[Explicit rejection or reacquisition]
+    G --> F
+```
+
+Use `verified_video` only when temporal provenance is known; otherwise use the controlled synthetic renderer. Standard VIA image manifests are rejected by the sequence command. The default initializer adds at least 0.4 seconds of latency at 10 Hz, and incomplete geometry may leave the filter uninitialized.
 
 ## Database architecture
 
@@ -210,7 +302,7 @@ Backup/export destinations must not already exist. Recovery/import target a new 
 
 ## Testing, verification, and performance
 
-The test suite covers model gradients, atmospheric inversion, masks and annotation conversion, clustering, temporal geometry, filter stability, checkpoint inference, metric calculations, validated ingestion, SQL constraints, write rejection, rollback, backup/recovery, portable exports, and end-to-end analysis.
+The current release passes **47 tests**; the additional verification report is in [results/extensions/verification.json](results/extensions/verification.json). Historical verification reports remain unchanged. The test suite covers model gradients, atmospheric inversion, masks and annotation conversion, clustering, temporal geometry, filter stability, checkpoint inference, metric calculations, validated ingestion, SQL constraints, write rejection, rollback, backup/recovery, portable exports, and end-to-end analysis.
 
 [Verification records](results/platform_verification.json) report executed checks and actual database operation timings. The delivered registry contains 1 dataset, 930 samples, 4 completed model runs, 12 test conditions, and 7,320 per-image observations. Published checkpoints were matched against evaluated state hashes; compact checkpoint re-evaluation exactly reproduced the test confusion matrices.
 
@@ -222,7 +314,7 @@ The measured experiments ran on CPU with two PyTorch threads per process and bat
 |---|---|
 | `rmldnet/model.py`, `losses.py` | Restoration, encoders, FPN, objectives |
 | `rmldnet/data.py`, `prepare.py`, `public_data.py` | Input validation, conversion, augmentation, verified release preparation |
-| `rmldnet/tracking.py` | Lane curve representation and temporal filtering |
+| `rmldnet/tracking.py`, `kalman.py`, `geometry.py`, `temporal.py` | Individual-lane tracking, validated filtering, corridor extraction, and explicit sequence processing |
 | `rmldnet/baselines.py`, `experiment.py`, `predict.py` | Baseline, training/evaluation, delivered-checkpoint inference |
 | `rmldnet/storage/` | Schema, ingestion validation, transactions, queries, exports, recovery |
 | `rmldnet/analysis.py`, `pipeline.py`, `settings.py` | Statistical analysis, figures, configuration, workflow orchestration |

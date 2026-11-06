@@ -1,0 +1,9 @@
+{
+  "source_kind": "synthetic_controlled",
+  "frames": 48,
+  "estimated_frames": 44,
+  "comparable_frames": 44,
+  "raw_rmse": 0.004386824542139707,
+  "filtered_rmse": 0.004026364329580252,
+  "units": "normalized image width"
+}

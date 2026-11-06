@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0
+
+- Added a reusable validated linear Kalman kernel, two-anchor lane-position dynamics, stable initialization, innovation gating and explicit lost-track reacquisition.
+- Integrated declared ordered images, trained segmentation, corridor measurements and causal filtering; verified controlled synthetic renders without inferring temporal order from VIA filenames.
+- Added six experimental groups and seven PNG/SVG/PDF figure sets for synthetic trajectories, stress, new fog levels, CPU efficiency, confidence/errors and geometry.
+- Retained failed initialization experiments, documented their diagnoses, and evaluated final settings on separate verification noise seeds.
+- Replayed original confusion matrices, preserved earlier result artifacts, and added compatible segmentation evaluations to a separate registry.
+
 ## 0.3.0
 
 - Added an eight-table SQLite experiment registry with transactional ingestion, read-only queries, integrity checks, portable exports and online backup/recovery.

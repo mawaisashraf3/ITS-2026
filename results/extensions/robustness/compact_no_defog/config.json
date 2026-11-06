@@ -1,0 +1,39 @@
+{
+  "data": "data/via",
+  "output": "runs/via/compact_no_defog",
+  "model": "compact_no_defog",
+  "encoder": null,
+  "epochs": 20,
+  "batch_size": 4,
+  "size": [
+    96,
+    224
+  ],
+  "lr": 0.001,
+  "seed": 7,
+  "evaluate_only": false,
+  "defog_pretrain_epochs": 2,
+  "python": "3.12.14",
+  "torch": "2.5.1+cpu",
+  "device": "cpu",
+  "parameters": 593123,
+  "encoder_sha256": null,
+  "encoder_pretraining": "random",
+  "instance_supervision": false,
+  "split_sha256": {
+    "train": "323ab7fe7476c80201f474d99b504f73ed7654c27d72bd4e318d3024c82f770e",
+    "val": "0c20b1e906d17fbc7a7562cd182eb51f3305ce4634b3d22b59eee25eb88f26b6",
+    "test": "b7f7a1bf224b0d0b509b79f7d98fbccca690512dd1f8780c05a6e427d35654e1"
+  },
+  "evaluation_extension": "fixed-checkpoint new corruption levels",
+  "timing_scope": "Evaluation includes loading, calibration, and geometry; controlled network timing is separate",
+  "evaluation_betas": [
+    0.0,
+    0.15,
+    0.45,
+    1.8,
+    2.1
+  ],
+  "checkpoint_reference": "results/via/compact_no_defog/best.pt",
+  "evaluation_checkpoint_sha256": "8524c0e2dd6b727790aefd34a626bb52afe5b8db6df33ed749974ead0890169b"
+}

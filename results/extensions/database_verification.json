@@ -1,0 +1,34 @@
+{
+  "original": {
+    "new_experiments": 4,
+    "datasets": 1,
+    "samples": 930,
+    "splits": 3,
+    "split_memberships": 930,
+    "experiments": 4,
+    "conditions": 12,
+    "observations": 7320,
+    "artifacts": 33
+  },
+  "extended": {
+    "new_experiments": 3,
+    "datasets": 1,
+    "samples": 930,
+    "splits": 3,
+    "split_memberships": 930,
+    "experiments": 7,
+    "conditions": 27,
+    "observations": 16470,
+    "artifacts": 60
+  },
+  "integrity": {
+    "ok": true,
+    "invalid_observation_associations": [],
+    "cross_split_groups": [],
+    "integrity_check": [
+      "ok"
+    ],
+    "foreign_key_violations": [],
+    "aggregate_mismatches": []
+  }
+}

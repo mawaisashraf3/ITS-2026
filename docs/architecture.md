@@ -23,3 +23,7 @@ A separate model workflow handles training and inference. Neural training is not
 Failures in source validation prevent a transaction. Constraint failures roll back the entire import. Destination files are never silently overwritten by backup or portable export. Database errors do not alter source bundles. Logs report operation counts and failures without dumping process environments or credential files.
 
 The initial schema version is 1. Unknown versions are rejected. SQLite is optimized for a local workstation; high-concurrency distributed ingestion should use a dedicated service and transactional server database.
+
+## Explicit sequence extension
+
+The validated linear filter kernel is shared by the original instance tracker and the new semantic corridor-position wrapper. `geometry` extracts near/far measurements; `temporal` requires explicit sequence metadata and strict timestamps. The extension experiment runner keeps temporal simulation, real-image diagnostics and microbenchmark timings in separate records. See the Kalman and additional-experiment guides.

@@ -1,0 +1,395 @@
+{
+  "sequence_id": "controlled-render-7",
+  "source_kind": "synthetic_controlled",
+  "truth_anchor_y": [
+    0.85,
+    0.6
+  ],
+  "seed": 7,
+  "frames": [
+    {
+      "image": "frame_0000.png",
+      "timestamp_s": 0.0,
+      "truth_centers": [
+        0.5,
+        0.5049667332698765
+      ]
+    },
+    {
+      "image": "frame_0001.png",
+      "timestamp_s": 0.1,
+      "truth_centers": [
+        0.5023985602591777,
+        0.5064270137973039
+      ]
+    },
+    {
+      "image": "frame_0002.png",
+      "timestamp_s": 0.2,
+      "truth_centers": [
+        0.5047884882915568,
+        0.5078641640154029
+      ]
+    },
+    {
+      "image": "frame_0003.png",
+      "timestamp_s": 0.30000000000000004,
+      "truth_centers": [
+        0.5071611829370329,
+        0.5092730117353246
+      ]
+    },
+    {
+      "image": "frame_0004.png",
+      "timestamp_s": 0.4,
+      "truth_centers": [
+        0.5095081050570854,
+        0.51064848662665
+      ]
+    },
+    {
+      "image": "frame_0005.png",
+      "timestamp_s": 0.5,
+      "truth_centers": [
+        0.5118208082664536,
+        0.511985638465105
+      ]
+    },
+    {
+      "image": "frame_0006.png",
+      "timestamp_s": 0.6000000000000001,
+      "truth_centers": [
+        0.5140909693310036,
+        0.5132796549480221
+      ]
+    },
+    {
+      "image": "frame_0007.png",
+      "timestamp_s": 0.7000000000000001,
+      "truth_centers": [
+        0.5163104181223828,
+        0.5145258790134326
+      ]
+    },
+    {
+      "image": "frame_0008.png",
+      "timestamp_s": 0.8,
+      "truth_centers": [
+        0.5184711670216593,
+        0.5157198256004617
+      ]
+    },
+    {
+      "image": "frame_0009.png",
+      "timestamp_s": 0.9,
+      "truth_centers": [
+        0.5205654396661246,
+        0.5168571977907036
+      ]
+    },
+    {
+      "image": "frame_0010.png",
+      "timestamp_s": 1.0,
+      "truth_centers": [
+        0.5225856989358014,
+        0.517933902272488
+      ]
+    },
+    {
+      "image": "frame_0011.png",
+      "timestamp_s": 1.1,
+      "truth_centers": [
+        0.5245246740789373,
+        0.518946064072382
+      ]
+    },
+    {
+      "image": "frame_0012.png",
+      "timestamp_s": 1.2000000000000002,
+      "truth_centers": [
+        0.526375386878859,
+        0.5198900405009091
+      ]
+    },
+    {
+      "image": "frame_0013.png",
+      "timestamp_s": 1.3,
+      "truth_centers": [
+        0.5281311767680164,
+        0.5207624342622993
+      ]
+    },
+    {
+      "image": "frame_0014.png",
+      "timestamp_s": 1.4000000000000001,
+      "truth_centers": [
+        0.5297857247988343,
+        0.5215601056810835
+      ]
+    },
+    {
+      "image": "frame_0015.png",
+      "timestamp_s": 1.5,
+      "truth_centers": [
+        0.5313330763850993,
+        0.5222801840015359
+      ]
+    },
+    {
+      "image": "frame_0016.png",
+      "timestamp_s": 1.6,
+      "truth_centers": [
+        0.5327676627320399,
+        0.5229200777192942
+      ]
+    },
+    {
+      "image": "frame_0017.png",
+      "timestamp_s": 1.7000000000000002,
+      "truth_centers": [
+        0.5340843208779745,
+        0.5234774839079767
+      ]
+    },
+    {
+      "image": "frame_0018.png",
+      "timestamp_s": 1.8,
+      "truth_centers": [
+        0.5352783122753979,
+        0.5239503965072306
+      ]
+    },
+    {
+      "image": "frame_0019.png",
+      "timestamp_s": 1.9000000000000001,
+      "truth_centers": [
+        0.5363453398446353,
+        0.524337113542383
+      ]
+    },
+    {
+      "image": "frame_0020.png",
+      "timestamp_s": 2.0,
+      "truth_centers": [
+        0.537281563438689,
+        0.5246362432497115
+      ]
+    },
+    {
+      "image": "frame_0021.png",
+      "timestamp_s": 2.1,
+      "truth_centers": [
+        0.5380836136636207,
+        0.5248467090852911
+      ]
+    },
+    {
+      "image": "frame_0022.png",
+      "timestamp_s": 2.2,
+      "truth_centers": [
+        0.5387486040047306,
+        0.5249677535993895
+      ]
+    },
+    {
+      "image": "frame_0023.png",
+      "timestamp_s": 2.3000000000000003,
+      "truth_centers": [
+        0.5392741412148944,
+        0.5249989411624685
+      ]
+    },
+    {
+      "image": "frame_0024.png",
+      "timestamp_s": 2.4000000000000004,
+      "truth_centers": [
+        0.5396583339276675,
+        0.5249401595329793
+      ]
+    },
+    {
+      "image": "frame_0025.png",
+      "timestamp_s": 2.5,
+      "truth_centers": [
+        0.5398997994641622,
+        0.5247916202613118
+      ]
+    },
+    {
+      "image": "frame_0026.png",
+      "timestamp_s": 2.6,
+      "truth_centers": [
+        0.5399976688091986,
+        0.5245538579284404
+      ]
+    },
+    {
+      "image": "frame_0027.png",
+      "timestamp_s": 2.7,
+      "truth_centers": [
+        0.539951589738821,
+        0.5242277282220114
+      ]
+    },
+    {
+      "image": "frame_0028.png",
+      "timestamp_s": 2.8000000000000003,
+      "truth_centers": [
+        0.539761728087923,
+        0.5238144048567899
+      ]
+    },
+    {
+      "image": "frame_0029.png",
+      "timestamp_s": 2.9000000000000004,
+      "truth_centers": [
+        0.5394287671534221,
+        0.5233153753505551
+      ]
+    },
+    {
+      "image": "frame_0030.png",
+      "timestamp_s": 3.0,
+      "truth_centers": [
+        0.5389539052351278,
+        0.5227324356706421
+      ]
+    },
+    {
+      "image": "frame_0031.png",
+      "timestamp_s": 3.1,
+      "truth_centers": [
+        0.5383388513231566,
+        0.5220676837703994
+      ]
+    },
+    {
+      "image": "frame_0032.png",
+      "timestamp_s": 3.2,
+      "truth_centers": [
+        0.537585818947413,
+        0.5213235120388219
+      ]
+    },
+    {
+      "image": "frame_0033.png",
+      "timestamp_s": 3.3000000000000003,
+      "truth_centers": [
+        0.5366975182112724,
+        0.5205025986905344
+      ]
+    },
+    {
+      "image": "frame_0034.png",
+      "timestamp_s": 3.4000000000000004,
+      "truth_centers": [
+        0.5356771460381352,
+        0.5196078981271105
+      ]
+    },
+    {
+      "image": "frame_0035.png",
+      "timestamp_s": 3.5,
+      "truth_centers": [
+        0.5345283746659549,
+        0.518642630304418
+      ]
+    },
+    {
+      "image": "frame_0036.png",
+      "timestamp_s": 3.6,
+      "truth_centers": [
+        0.5332553384311474,
+        0.5176102691442543
+      ]
+    },
+    {
+      "image": "frame_0037.png",
+      "timestamp_s": 3.7,
+      "truth_centers": [
+        0.5318626188894434,
+        0.51651453003198
+      ]
+    },
+    {
+      "image": "frame_0038.png",
+      "timestamp_s": 3.8000000000000003,
+      "truth_centers": [
+        0.5303552283272369,
+        0.5153593564451427
+      ]
+    },
+    {
+      "image": "frame_0039.png",
+      "timestamp_s": 3.9000000000000004,
+      "truth_centers": [
+        0.528738591722765,
+        0.5141489057612175
+      ]
+    },
+    {
+      "image": "frame_0040.png",
+      "timestamp_s": 4.0,
+      "truth_centers": [
+        0.527018527222046,
+        0.5128875342955366
+      ]
+    },
+    {
+      "image": "frame_0041.png",
+      "timestamp_s": 4.1000000000000005,
+      "truth_centers": [
+        0.5252012251998357,
+        0.5115797816232586
+      ]
+    },
+    {
+      "image": "frame_0042.png",
+      "timestamp_s": 4.2,
+      "truth_centers": [
+        0.5232932259809633,
+        0.5102303542418004
+      ]
+    },
+    {
+      "image": "frame_0043.png",
+      "timestamp_s": 4.3,
+      "truth_centers": [
+        0.5213013963022248,
+        0.5088441086325286
+      ]
+    },
+    {
+      "image": "frame_0044.png",
+      "timestamp_s": 4.4,
+      "truth_centers": [
+        0.519232904599546,
+        0.5074260337826708
+      ]
+    },
+    {
+      "image": "frame_0045.png",
+      "timestamp_s": 4.5,
+      "truth_centers": [
+        0.5170951952093532,
+        0.5059812332303496
+      ]
+    },
+    {
+      "image": "frame_0046.png",
+      "timestamp_s": 4.6000000000000005,
+      "truth_centers": [
+        0.5148959615770022,
+        0.5045149066973558
+      ]
+    },
+    {
+      "image": "frame_0047.png",
+      "timestamp_s": 4.7,
+      "truth_centers": [
+        0.5126431185686822,
+        0.5030323313757658
+      ]
+    }
+  ]
+}

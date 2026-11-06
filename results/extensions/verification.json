@@ -1,0 +1,92 @@
+{
+  "version": "0.4.0",
+  "timestamp_utc": "2026-11-06T14:57:40.962636+00:00",
+  "tests": {
+    "command": "python -m pytest -q",
+    "returncode": 0,
+    "stdout": "...............................................                          [100%]\n47 passed in 10.07s"
+  },
+  "dependencies": {
+    "returncode": 0,
+    "stdout": "No broken requirements found."
+  },
+  "source_sha256": {
+    "rmldnet/__init__.py": "c52e94432124161d2b6396719db71ff27d897ee523a3cd7d3c3587f6d1bde251",
+    "rmldnet/ablate.py": "a4772fcba21c3d6737eaea6b8d6ac91e2414705d278a0d870d388306559e6aae",
+    "rmldnet/analysis.py": "df47170726d29ac1b715fbd508387221fd39f5cd6bdb80b308e0086aa0a25c95",
+    "rmldnet/baselines.py": "dfd2d4d623e04d8882b8531d26d1d6a421990e771440cadaafdd20ae891f64dd",
+    "rmldnet/cli.py": "e45a3793e43f343ec51fc6f55117bc020d9cdfcd06570839efa318b1cdc42b70",
+    "rmldnet/data.py": "931d6fafab029cb0fb4b183eea436a421cc3f5c41102f8c7eaf9234ebb5cb9b5",
+    "rmldnet/efficiency.py": "be81fe4dae6579776ef8c07a82bef8bb48c3f6068d4682bd199134fceaf587de",
+    "rmldnet/experiment.py": "5f07b9334cb2d72b2f986697f133ed04bcecbd38178578e3f3a2282a82671f78",
+    "rmldnet/extension_figures.py": "f1b85ced4a44ac504f2b18c4afcc3f9bd880989a5ac958ca2e60f04ca93b4d06",
+    "rmldnet/extensions.py": "a8b9cc1b497daaa6cde1420a12aaebaddcdbaf12817979182e51640de2e0d655",
+    "rmldnet/geometry.py": "aba80e3ec429169e3692eef651c20a82bb071deb0c1ba98efeeab26cd6240732",
+    "rmldnet/kalman.py": "8a732813c22128ad8709a911ecbe333d351da5fd97e1c5f3ce3f41165bda2a64",
+    "rmldnet/kalman_experiments.py": "5a3fcf99387ff2648e46e3619b1d7e50ba3caac9baefa64792f81772896c79a9",
+    "rmldnet/losses.py": "63e1547c37bae5ac40e0c2b9ff920b1fc3594d1bd28285971199969fb602a158",
+    "rmldnet/metrics.py": "d83008cefa7a622f69eed48b0a4a875e12106f2dcc93db7b38e4b56e1255b85d",
+    "rmldnet/model.py": "bd1336ee02ee9d3bce4597b8918fffd26bad27d28aa199d3e1bc9ea7bdde71bd",
+    "rmldnet/pipeline.py": "3d7fc24192155a3d9ad917c4a1acddfef81a327f624bc0b368cc9665c6318093",
+    "rmldnet/predict.py": "5e0537eeb90f38f0571f454240f64613558d265c426f6c1b97bcfeffaa70a739",
+    "rmldnet/prepare.py": "5962e98f7a965f53c3bd417834f35ad7c2d106b18aad4b9189f345385c028d2f",
+    "rmldnet/public_data.py": "7d214429198f5fae5101722c08dd6aa7c8f7f80acb7199fbb2aca79b5a7da70c",
+    "rmldnet/report.py": "6bef63372cc1fbfef134eb482f5da0cc7365be21dd1aac77efcbc1b8d7850ed5",
+    "rmldnet/robustness.py": "352528928f8378658c5b169ac8bc1daa254f5324e626623d7b8f955cd7b8a81a",
+    "rmldnet/settings.py": "b6233dbd8479b5f024def296ae61a78fa059d8f556ad618458ac7a057de04e18",
+    "rmldnet/storage/__init__.py": "e3ae75fb56df5940f214617b285850625ecbdb52c403eb8fa3f66b673787fe8f",
+    "rmldnet/storage/cli.py": "d09a29874d8fbb3e337be2ac2cb93a6651ec1f6e600f8e86549e45894250eba4",
+    "rmldnet/storage/schema.sql": "71f91a7118d449469ed5d48cf4b439f531740cdc66119281ecdd363623a7423e",
+    "rmldnet/storage/store.py": "1a55c89bd12c1b536d2cf9a92b66b1673fd3bfa05903f9b9da987879d6661d42",
+    "rmldnet/storage/validation.py": "193680046e0f935c4e38ee4fb7e0b823bac4f12b40aaa370752e7493ee78cf78",
+    "rmldnet/temporal.py": "6714ee8a8f30fca31e6c6530caa8d111c994c3fbc432af1ea84f1e47b2dfe047",
+    "rmldnet/tracking.py": "33e18f586259fb286b0198ff21d9a9e7fa7ea19971ba2a21a13aee24de9346b1"
+  },
+  "wheel": {
+    "filename": "rmldnet-0.4.0-py3-none-any.whl",
+    "sha256": "1c6c9284b95a27c49caf981cac7d4f32f3d836bda58b219e6e7dea8618a46f49",
+    "all_package_source_matches": true
+  },
+  "original_artifacts": {
+    "base_commit": "f99112fdd8c0f736d96a2661f3940f051b71501d",
+    "files_preserved_byte_for_byte": 70
+  },
+  "original_confusion_matrices_replayed": 3,
+  "new_segmentation_conditions": 15,
+  "all_per_image_confusions_reconcile": true,
+  "additional_figures": 7,
+  "formats": [
+    "PNG",
+    "SVG",
+    "PDF"
+  ],
+  "benchmark_identical_probe_verified": true,
+  "pipeline_command_executed": "python -m rmldnet.extensions all --output runs/extensions_reproduction --full-checkpoint runs/via/swin_b/best.pt",
+  "independent_numerical_verification_seeds": [
+    207,
+    226
+  ],
+  "failed_development_and_intermediate_results_retained": true,
+  "registry_counts": {
+    "datasets": 1,
+    "samples": 930,
+    "splits": 3,
+    "split_memberships": 930,
+    "experiments": 7,
+    "conditions": 27,
+    "observations": 16470,
+    "artifacts": 60
+  },
+  "registry_integrity": {
+    "ok": true,
+    "invalid_observation_associations": [],
+    "cross_split_groups": [],
+    "integrity_check": [
+      "ok"
+    ],
+    "foreign_key_violations": [],
+    "aggregate_mismatches": []
+  },
+  "cpu_affinity_count": 5,
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor"
+}

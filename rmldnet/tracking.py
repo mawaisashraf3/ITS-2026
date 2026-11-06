@@ -2,6 +2,7 @@
 
 import numpy as np
 from scipy.optimize import linear_sum_assignment
+from .kalman import LinearKalmanFilter
 
 
 def lane_state(points):
@@ -42,8 +43,11 @@ class LaneTracker:
         f = np.eye(4)
         f[2, 3] = dt
         for t in self.tracks:
-            t["state"] = f @ t["state"]
-            t["cov"] = f @ t["cov"] @ f.T + self.q
+            t["_filter"] = LinearKalmanFilter(
+                t["state"], t["cov"], f, np.eye(4), self.q, self.r
+            )
+            t["state"] = t["_filter"].predict()
+            t["cov"] = t["_filter"].P.copy()
             t["age"] += 1
         matched = set()
         if self.tracks and len(z):
@@ -70,13 +74,9 @@ class LaneTracker:
                 if j >= len(z) or cost[i, j] > self.gate:
                     continue
                 t = self.tracks[i]
-                p = t["cov"]
-                k = np.linalg.solve((p + self.r).T, p.T).T
-                t["state"] += k @ (z[j] - t["state"])
-                ident = np.eye(4) - k
-                t["cov"] = (
-                    ident @ p @ ident.T + k @ self.r @ k.T
-                )  # Joseph covariance update
+                t["_filter"].update(z[j])
+                t["state"] = t["_filter"].state
+                t["cov"] = t["_filter"].P.copy()
                 t["age"] = 0
                 matched.add(j)
         self.tracks = [t for t in self.tracks if t["age"] <= self.max_age]

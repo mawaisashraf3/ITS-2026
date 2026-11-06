@@ -1,0 +1,124 @@
+{
+  "model": "compact_no_defog",
+  "seed": 7,
+  "selection": "Existing validation-selected checkpoint and threshold; no test tuning",
+  "checkpoint_tensor_sha256": "c6ac88269630fcd448ca4102ac1f42b7ac474c815e2566121070332f1808a211",
+  "conditions": [
+    {
+      "precision": 0.7767686155048047,
+      "recall": 0.7645364176466414,
+      "f1": 0.7706039776229451,
+      "accuracy": 0.9731035933840749,
+      "lane_iou": 0.6268150893582454,
+      "miou": 0.799323057878329,
+      "confusion": [
+        [
+          12172032,
+          170303
+        ],
+        [
+          182509,
+          592596
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 6.674624715000391,
+      "threshold": 0.6500000000000001,
+      "beta": 0.0
+    },
+    {
+      "precision": 0.7785843872769751,
+      "recall": 0.76960927874288,
+      "f1": 0.7740708179915978,
+      "accuracy": 0.9734537379244731,
+      "lane_iou": 0.6314156065062921,
+      "miou": 0.8018023065928389,
+      "confusion": [
+        [
+          12172693,
+          169642
+        ],
+        [
+          178577,
+          596528
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 6.490387306999764,
+      "threshold": 0.6500000000000001,
+      "beta": 0.15
+    },
+    {
+      "precision": 0.7842240591542141,
+      "recall": 0.7728204565833016,
+      "f1": 0.7784804985772665,
+      "accuracy": 0.9740113162324356,
+      "lane_iou": 0.6373050104157579,
+      "miou": 0.8050363732078658,
+      "confusion": [
+        [
+          12177518,
+          164817
+        ],
+        [
+          176088,
+          599017
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 6.336439355000039,
+      "threshold": 0.6500000000000001,
+      "beta": 0.45
+    },
+    {
+      "precision": 0.7910709278071966,
+      "recall": 0.4986021248734043,
+      "f1": 0.6116738575105014,
+      "accuracy": 0.9625913287958626,
+      "lane_iou": 0.4405836919656853,
+      "miou": 0.701019710338201,
+      "confusion": [
+        [
+          12240265,
+          102070
+        ],
+        [
+          388636,
+          386469
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 6.319876647001365,
+      "threshold": 0.6500000000000001,
+      "beta": 1.8
+    },
+    {
+      "precision": 0.7687831288612704,
+      "recall": 0.384341476316112,
+      "f1": 0.5124775612051192,
+      "accuracy": 0.9567905780396175,
+      "lane_iou": 0.34451753320797224,
+      "miou": 0.6501519975207082,
+      "confusion": [
+        [
+          12252738,
+          89597
+        ],
+        [
+          477200,
+          297905
+        ]
+      ],
+      "protocol": "binary pixel confusion; not official lane benchmark",
+      "samples": 610,
+      "elapsed_seconds": 6.220530542999768,
+      "threshold": 0.6500000000000001,
+      "beta": 2.1
+    }
+  ],
+  "per_image_metrics_file": "per_image_metrics.jsonl"
+}

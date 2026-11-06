@@ -1,0 +1,16 @@
+filter:
+  acceleration_variance: 0.0004
+  measurement_variance: 0.000144
+  initial_velocity_variance: 0.01
+  gate: 9.21
+  initialization_observations: 5
+  reacquire_after: 8
+  reacquire_max_spread: 0.06
+geometry:
+  near_y: 0.85
+  far_y: 0.60
+  band_radius: 2
+  min_rows: 2
+  max_mark_width: 0.15
+  min_corridor_width: 0.12
+  max_corridor_width: 0.98

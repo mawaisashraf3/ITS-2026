@@ -286,9 +286,9 @@ def figures(bundle, analysis_dir, output):
     plt.close(fig)
 
 
-def save_figure(fig, stem):
+def save_figure(fig, stem, dpi=220):
     for extension in ["png", "svg", "pdf"]:
-        fig.savefig(f"{stem}.{extension}", dpi=220, metadata={"Creator": "RMLDNet"})
+        fig.savefig(f"{stem}.{extension}", dpi=dpi, metadata={"Creator": "RMLDNet"})
         if extension == "svg":
             path = Path(f"{stem}.svg")
             path.write_text(

@@ -1,0 +1,27 @@
+{
+  "snapshot": {
+    "path": "results/extensions/experiments.sqlite3",
+    "sha256": "4a868db23868ff4ac3a891b33d56c00208fc26450a37e420f17b88bf29ef5799",
+    "bytes": 1384448
+  },
+  "integrity": {
+    "ok": true,
+    "invalid_observation_associations": [],
+    "cross_split_groups": [],
+    "integrity_check": [
+      "ok"
+    ],
+    "foreign_key_violations": [],
+    "aggregate_mismatches": []
+  },
+  "counts": {
+    "datasets": 1,
+    "samples": 930,
+    "splits": 3,
+    "split_memberships": 930,
+    "experiments": 7,
+    "conditions": 27,
+    "observations": 16470,
+    "artifacts": 60
+  }
+}

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rmldnet"
-version = "0.3.0"
+version = "0.4.0"
 description = "Lane perception, reproducible evaluation, and transactional experiment management"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
@@ -16,6 +16,8 @@ rmldnet = "rmldnet.cli:main"
 rmldnet-prepare = "rmldnet.prepare:main"
 rmldnet-db = "rmldnet.storage.cli:main"
 rmldnet-platform = "rmldnet.pipeline:main"
+rmldnet-track = "rmldnet.temporal:main"
+rmldnet-experiments = "rmldnet.extensions:main"
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}

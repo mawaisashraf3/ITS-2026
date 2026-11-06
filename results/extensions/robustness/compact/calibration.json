@@ -1,0 +1,592 @@
+[
+  {
+    "beta": 0.0,
+    "brier": 0.02097480552830705,
+    "negative_log_likelihood": 0.09086334936361193,
+    "ece": 0.0154650340147942,
+    "positive_brier": 0.1705833152071931,
+    "negative_brier": 0.011579314003028153,
+    "pixels": 13117440,
+    "positive_pixels": 775105,
+    "bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.06666666666666667,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.06666666666666667,
+        "upper": 0.13333333333333333,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.13333333333333333,
+        "upper": 0.2,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.26666666666666666,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.26666666666666666,
+        "upper": 0.3333333333333333,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.3333333333333333,
+        "upper": 0.4,
+        "pixels": 20782,
+        "mean_confidence": 0.3748862723845993,
+        "accuracy": 0.5124145895486478
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.4666666666666667,
+        "pixels": 27054,
+        "mean_confidence": 0.43316769083050144,
+        "accuracy": 0.5461669254084424
+      },
+      {
+        "lower": 0.4666666666666667,
+        "upper": 0.5333333333333333,
+        "pixels": 26987,
+        "mean_confidence": 0.5000922066240748,
+        "accuracy": 0.5786489791381035
+      },
+      {
+        "lower": 0.5333333333333333,
+        "upper": 0.6,
+        "pixels": 28041,
+        "mean_confidence": 0.5671407496020252,
+        "accuracy": 0.6022609750008916
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.6666666666666666,
+        "pixels": 37890,
+        "mean_confidence": 0.6383307672578887,
+        "accuracy": 0.5986539984164687
+      },
+      {
+        "lower": 0.6666666666666666,
+        "upper": 0.7333333333333333,
+        "pixels": 65467,
+        "mean_confidence": 0.7006667006167278,
+        "accuracy": 0.5922678601432783
+      },
+      {
+        "lower": 0.7333333333333333,
+        "upper": 0.8,
+        "pixels": 76270,
+        "mean_confidence": 0.7678326206523312,
+        "accuracy": 0.6346663170315983
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8666666666666667,
+        "pixels": 100406,
+        "mean_confidence": 0.8352345702221184,
+        "accuracy": 0.6776587056550405
+      },
+      {
+        "lower": 0.8666666666666667,
+        "upper": 0.9333333333333333,
+        "pixels": 162518,
+        "mean_confidence": 0.9035224880259443,
+        "accuracy": 0.7379736398429713
+      },
+      {
+        "lower": 0.9333333333333333,
+        "upper": 1.0,
+        "pixels": 12572025,
+        "mean_confidence": 0.9987012370356128,
+        "accuracy": 0.9881731861016821
+      }
+    ],
+    "definition": "Confidence is predicted-class probability under the frozen validation-selected decision threshold; entropy is predictive, not epistemic uncertainty."
+  },
+  {
+    "beta": 0.15,
+    "brier": 0.020777599411722802,
+    "negative_log_likelihood": 0.09000228606953577,
+    "ece": 0.015301411762376791,
+    "positive_brier": 0.16904774297933345,
+    "negative_brier": 0.011466157968108374,
+    "pixels": 13117440,
+    "positive_pixels": 775105,
+    "bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.06666666666666667,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.06666666666666667,
+        "upper": 0.13333333333333333,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.13333333333333333,
+        "upper": 0.2,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.26666666666666666,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.26666666666666666,
+        "upper": 0.3333333333333333,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.3333333333333333,
+        "upper": 0.4,
+        "pixels": 20832,
+        "mean_confidence": 0.3750916352172235,
+        "accuracy": 0.5201612903225806
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.4666666666666667,
+        "pixels": 26723,
+        "mean_confidence": 0.43313115006573066,
+        "accuracy": 0.5399094413052427
+      },
+      {
+        "lower": 0.4666666666666667,
+        "upper": 0.5333333333333333,
+        "pixels": 26870,
+        "mean_confidence": 0.5002143796254678,
+        "accuracy": 0.5722739114253814
+      },
+      {
+        "lower": 0.5333333333333333,
+        "upper": 0.6,
+        "pixels": 27753,
+        "mean_confidence": 0.5670783223096166,
+        "accuracy": 0.6004035599754981
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.6666666666666666,
+        "pixels": 37286,
+        "mean_confidence": 0.6383143941775058,
+        "accuracy": 0.5989379391728799
+      },
+      {
+        "lower": 0.6666666666666666,
+        "upper": 0.7333333333333333,
+        "pixels": 64701,
+        "mean_confidence": 0.7006117393364466,
+        "accuracy": 0.5951530888239749
+      },
+      {
+        "lower": 0.7333333333333333,
+        "upper": 0.8,
+        "pixels": 75546,
+        "mean_confidence": 0.7678440061331748,
+        "accuracy": 0.6317078336377836
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8666666666666667,
+        "pixels": 99783,
+        "mean_confidence": 0.8352123133632616,
+        "accuracy": 0.6788330677570328
+      },
+      {
+        "lower": 0.8666666666666667,
+        "upper": 0.9333333333333333,
+        "pixels": 161086,
+        "mean_confidence": 0.9036165884088921,
+        "accuracy": 0.7383136957898265
+      },
+      {
+        "lower": 0.9333333333333333,
+        "upper": 1.0,
+        "pixels": 12576860,
+        "mean_confidence": 0.9987191335894421,
+        "accuracy": 0.988289604877529
+      }
+    ],
+    "definition": "Confidence is predicted-class probability under the frozen validation-selected decision threshold; entropy is predictive, not epistemic uncertainty."
+  },
+  {
+    "beta": 0.45,
+    "brier": 0.020363604796743415,
+    "negative_log_likelihood": 0.08799925868095063,
+    "ece": 0.014882512349165053,
+    "positive_brier": 0.16960515987404928,
+    "negative_brier": 0.010991158209594775,
+    "pixels": 13117440,
+    "positive_pixels": 775105,
+    "bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.06666666666666667,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.06666666666666667,
+        "upper": 0.13333333333333333,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.13333333333333333,
+        "upper": 0.2,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.26666666666666666,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.26666666666666666,
+        "upper": 0.3333333333333333,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.3333333333333333,
+        "upper": 0.4,
+        "pixels": 20516,
+        "mean_confidence": 0.37479153362357565,
+        "accuracy": 0.5007311366738155
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.4666666666666667,
+        "pixels": 26381,
+        "mean_confidence": 0.43320342191522504,
+        "accuracy": 0.5274629468177855
+      },
+      {
+        "lower": 0.4666666666666667,
+        "upper": 0.5333333333333333,
+        "pixels": 26561,
+        "mean_confidence": 0.5001891472514578,
+        "accuracy": 0.5618764353751742
+      },
+      {
+        "lower": 0.5333333333333333,
+        "upper": 0.6,
+        "pixels": 27600,
+        "mean_confidence": 0.5669076558148516,
+        "accuracy": 0.5828260869565217
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.6666666666666666,
+        "pixels": 36632,
+        "mean_confidence": 0.6387531970588759,
+        "accuracy": 0.599011792967897
+      },
+      {
+        "lower": 0.6666666666666666,
+        "upper": 0.7333333333333333,
+        "pixels": 63052,
+        "mean_confidence": 0.7007611471119057,
+        "accuracy": 0.5929391613271585
+      },
+      {
+        "lower": 0.7333333333333333,
+        "upper": 0.8,
+        "pixels": 74473,
+        "mean_confidence": 0.7677956325094593,
+        "accuracy": 0.6329676527063499
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8666666666666667,
+        "pixels": 97769,
+        "mean_confidence": 0.8352830940348378,
+        "accuracy": 0.6761345620800049
+      },
+      {
+        "lower": 0.8666666666666667,
+        "upper": 0.9333333333333333,
+        "pixels": 158507,
+        "mean_confidence": 0.9035573170916269,
+        "accuracy": 0.738320705079271
+      },
+      {
+        "lower": 0.9333333333333333,
+        "upper": 1.0,
+        "pixels": 12585949,
+        "mean_confidence": 0.9987457445619923,
+        "accuracy": 0.9885736069644013
+      }
+    ],
+    "definition": "Confidence is predicted-class probability under the frozen validation-selected decision threshold; entropy is predictive, not epistemic uncertainty."
+  },
+  {
+    "beta": 1.8,
+    "brier": 0.0297533991033897,
+    "negative_log_likelihood": 0.14706189326371039,
+    "ece": 0.024452542286075248,
+    "positive_brier": 0.40228245190331524,
+    "negative_brier": 0.006358382563125132,
+    "pixels": 13117440,
+    "positive_pixels": 775105,
+    "bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.06666666666666667,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.06666666666666667,
+        "upper": 0.13333333333333333,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.13333333333333333,
+        "upper": 0.2,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.26666666666666666,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.26666666666666666,
+        "upper": 0.3333333333333333,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.3333333333333333,
+        "upper": 0.4,
+        "pixels": 21146,
+        "mean_confidence": 0.3747636208124512,
+        "accuracy": 0.4055140452094959
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.4666666666666667,
+        "pixels": 27787,
+        "mean_confidence": 0.433497310330415,
+        "accuracy": 0.4207723035952064
+      },
+      {
+        "lower": 0.4666666666666667,
+        "upper": 0.5333333333333333,
+        "pixels": 28154,
+        "mean_confidence": 0.5000839511859719,
+        "accuracy": 0.44927896568871206
+      },
+      {
+        "lower": 0.5333333333333333,
+        "upper": 0.6,
+        "pixels": 29205,
+        "mean_confidence": 0.5673367446782429,
+        "accuracy": 0.4800205444273241
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.6666666666666666,
+        "pixels": 39064,
+        "mean_confidence": 0.6383188172591995,
+        "accuracy": 0.5214775752611099
+      },
+      {
+        "lower": 0.6666666666666666,
+        "upper": 0.7333333333333333,
+        "pixels": 66872,
+        "mean_confidence": 0.7007479079518717,
+        "accuracy": 0.5735434860629262
+      },
+      {
+        "lower": 0.7333333333333333,
+        "upper": 0.8,
+        "pixels": 77982,
+        "mean_confidence": 0.7677533004742187,
+        "accuracy": 0.6063835244030674
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8666666666666667,
+        "pixels": 102037,
+        "mean_confidence": 0.8351058322556856,
+        "accuracy": 0.6437174750335662
+      },
+      {
+        "lower": 0.8666666666666667,
+        "upper": 0.9333333333333333,
+        "pixels": 164073,
+        "mean_confidence": 0.9036241344473676,
+        "accuracy": 0.694581070621004
+      },
+      {
+        "lower": 0.9333333333333333,
+        "upper": 1.0,
+        "pixels": 12561120,
+        "mean_confidence": 0.9986912656025878,
+        "accuracy": 0.9798801380768594
+      }
+    ],
+    "definition": "Confidence is predicted-class probability under the frozen validation-selected decision threshold; entropy is predictive, not epistemic uncertainty."
+  },
+  {
+    "beta": 2.1,
+    "brier": 0.037535181754648365,
+    "negative_log_likelihood": 0.22380904948930497,
+    "ece": 0.03237236111963247,
+    "positive_brier": 0.5442791708720092,
+    "negative_brier": 0.005711398031000286,
+    "pixels": 13117440,
+    "positive_pixels": 775105,
+    "bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.06666666666666667,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.06666666666666667,
+        "upper": 0.13333333333333333,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.13333333333333333,
+        "upper": 0.2,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.26666666666666666,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.26666666666666666,
+        "upper": 0.3333333333333333,
+        "pixels": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.3333333333333333,
+        "upper": 0.4,
+        "pixels": 19119,
+        "mean_confidence": 0.3749383649221742,
+        "accuracy": 0.42324389350907476
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.4666666666666667,
+        "pixels": 25805,
+        "mean_confidence": 0.433473619976332,
+        "accuracy": 0.45343925595814766
+      },
+      {
+        "lower": 0.4666666666666667,
+        "upper": 0.5333333333333333,
+        "pixels": 26505,
+        "mean_confidence": 0.5000582927331635,
+        "accuracy": 0.4849651009243539
+      },
+      {
+        "lower": 0.5333333333333333,
+        "upper": 0.6,
+        "pixels": 27797,
+        "mean_confidence": 0.5671458719496925,
+        "accuracy": 0.5042270748641939
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.6666666666666666,
+        "pixels": 37431,
+        "mean_confidence": 0.6382674573347183,
+        "accuracy": 0.5406748417087441
+      },
+      {
+        "lower": 0.6666666666666666,
+        "upper": 0.7333333333333333,
+        "pixels": 62773,
+        "mean_confidence": 0.7006457479378041,
+        "accuracy": 0.5780192120816274
+      },
+      {
+        "lower": 0.7333333333333333,
+        "upper": 0.8,
+        "pixels": 74115,
+        "mean_confidence": 0.7677753142551605,
+        "accuracy": 0.612588544828982
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8666666666666667,
+        "pixels": 96334,
+        "mean_confidence": 0.8352953443768872,
+        "accuracy": 0.648587207008948
+      },
+      {
+        "lower": 0.8666666666666667,
+        "upper": 0.9333333333333333,
+        "pixels": 154413,
+        "mean_confidence": 0.9036449294462734,
+        "accuracy": 0.6972275650366225
+      },
+      {
+        "lower": 0.9333333333333333,
+        "upper": 1.0,
+        "pixels": 12593148,
+        "mean_confidence": 0.9987569097745427,
+        "accuracy": 0.9710956307350632
+      }
+    ],
+    "definition": "Confidence is predicted-class probability under the frozen validation-selected decision threshold; entropy is predictive, not epistemic uncertainty."
+  }
+]

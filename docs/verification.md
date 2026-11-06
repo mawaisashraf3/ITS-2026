@@ -42,3 +42,9 @@ Evidence files exclude weights, copyrighted images. Full local checkpoints/data 
 The current suite additionally verifies atomic result ingestion, idempotence, SQL-derived metrics, foreign keys, integer-count constraints, read-only query authorizers, insert/update split guards, invalid-input rollback, online backup/recovery, JSON export/import, configuration validation and full management-pipeline execution. `results/platform_verification.json` records the latest executed suite and package checks. `results/database/verification.json` records measured database operation timings and the delivered registry checksum.
 
 The analysis workflow completed 2,000 source-group bootstrap resamples and a six-level atmospheric-corruption sweep across ten thresholds using the fixed compact checkpoint. Original and beta=1.2 confusion matrices exactly matched the previously evaluated model. The paired F1-difference interval includes zero; no reliable superiority claim is inferred.
+
+## v0.4 filtering and diagnostic extension
+
+The new release has 47 passing tests, including scalar and correlated-state hand calculations, covariance stability, missing/partial observations, rejected innovations, stable initialization, lost-track recovery, sequence provenance and controlled-image integration. The complete new experiment command was executed from a fresh output directory, including reproduction of both failed initialization variants. Original segmentation confusion matrices replayed exactly for all three delivered checkpoints. All earlier result artifacts remain unchanged.
+
+See `results/extensions/verification.json` for the current test, packaging, artifact-preservation and database checks; the preceding platform evidence describes v0.3. Numerical trajectories and rendered sequences are explicitly synthetic. Real-image geometry is coverage-limited and is not vehicle localization ground truth.
